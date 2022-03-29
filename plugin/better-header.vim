@@ -10,7 +10,7 @@
 
 scriptencoding utf-8
 
-if !exists('g:better_head_enable')
+if exists('g:better_head_enable')
   finish
 endif
 
