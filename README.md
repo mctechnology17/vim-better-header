@@ -24,8 +24,6 @@
 - easy use
 - multi platform (OSX, Linux, Docker, Windows, WSL2)
 - easy integration
-- completely intuitive interface
-- status bar and custom prompt with current branch
 
 # Installation
 
@@ -35,12 +33,14 @@ and the arguments for the following variables
 ```vim
     " install better-header
     Plug 'mctechnology17/vim-better-header'
-    " set your info, hier a example
+    " set your info, hier a example:
     let g:better_head_date = strftime("%H:%M %d.%B.%Y")
     let g:better_head_author = "Marcos Chow Castro"
     let g:better_head_email = "mctechnology170318@gmail.com"
     let g:better_head_github = "https://github.com/mctechnology17"
 ```
+
+<img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/vim-better-header-demo.MOV" height="450">
 
 #### No Plugin Manager
 If you are not using any plug manager, you can integrate GitManager to
