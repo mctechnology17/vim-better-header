@@ -17,7 +17,34 @@
 ----
 
 # Intro
-`better-header` is a template that is inserted when starting a new file, saving time and allowing you to have an impeccable aesthetic in each new file created by you.
+`better-header` is a template that is inserted when starting a new file,
+saving time and allowing you to have an impeccable aesthetic in each
+new file created by you.
+
+With better-header you no longer have to write the date,
+your name or your github, which are repetitive things,
+save time and only define that information once.
+
+Is compatible with all programming languages, markup language,
+scripts etc. here are some as an example:
+
+```bash
+cpp,c,go,java,javascript,scala,php,rust,jsonc,json,vim,python,r,ruby,
+sh,desktop,fstab,profile,text,tmux,make,dockerfile,bashrc,zsh,zshrc,
+bash_profile,gitignore,yaml,gdb,gitconfig,conf,fish,sshconfig,html,
+xml,tex,mail,lua,dosbatch,autohotkey
+```
+This is an example of the header that is used as a format:
+```bash
+# ========================================
+# FileName: README.md
+# Date: 00:51 30.March.2022
+# Author: Marcos Chow Castro
+# Email: mctechnology170318@gmail.com
+# GitHub: https://github.com/mctechnology17
+# Brief: repository description
+# =========================================
+```
 
 # Installation
 

@@ -6,5 +6,4 @@
 <!-- Email: <email> -->
 <!-- GitHub: <github> -->
 <!-- Brief: <brief> -->
-<!-- Detail: <detail> -->
 <!-- ======================================== -->
