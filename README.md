@@ -63,7 +63,7 @@ let g:better_head_github = "https://github.com/mctechnology17"
 
 <img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/vim-better-header-demo.MOV" height="450">
 
-#### Manuaal installation
+#### Manual installation
 If you are not using any plug manager, you can integrate GitManager to
 vim in the following way, keeping in mind that the repository is in your home
 
@@ -110,7 +110,7 @@ And run `:PlugInstall` inside Vim or `vim +PlugInstall +qa` from shell.
 <img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/PlugInstall.gif" height="450">
 
 # Donate
-If you're enjoying GitManager, feel free to donate or become a sponsor.
+If you're enjoying `better-header`, feel free to donate or become a sponsor.
 - [paypal]
 - [sponsor]
 
@@ -128,7 +128,7 @@ Here you can see another recently published project:
 
 Released under the GNU General Public License v3.0.
 
-Copyright (c) 2021 Marcos Chow Castro
+Copyright (c) 2022 Marcos Chow Castro
 
 [twitter]: https://twitter.com/mctechnology17
 [youtube]: https://www.youtube.com/c/mctechnology17

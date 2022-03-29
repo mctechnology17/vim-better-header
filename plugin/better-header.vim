@@ -4,8 +4,7 @@
 " Author: Marcos Chow Castro
 " Email: mctechnology170318@gmail.com
 " GitHub: https://github.com/mctechnology17
-" Brief: <brief>
-" Detail: <detail>
+" Brief: better-header main code
 "==========================================
 
 scriptencoding utf-8
