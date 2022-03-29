@@ -61,7 +61,7 @@ let g:better_head_email = "mctechnology170318@gmail.com"
 let g:better_head_github = "https://github.com/mctechnology17"
 ```
 
-<img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/vim-better-header-demo.MOV" height="450" href="https://www.youtube.com/c/mctechnology17">
+<img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/vim-better-header-demo.MOV" height="450">
 
 #### Manuaal installation
 If you are not using any plug manager, you can integrate GitManager to
