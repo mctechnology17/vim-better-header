@@ -10,14 +10,15 @@
 
 scriptencoding utf-8
 
-if exists('g:better_head_enable')
+if exists('g:better_head_enable') " {{{
   finish
 endif
 
 let g:better_head_enable =
 			\ get(g:, 'better_head_enable', 1)
+" }}}
 
-" define os and editor {{{
+""" define os and editor {{{
 let s:is_win =
       \ get(s:, 'is_win',
       \ expand( has('win32unix')||has('win32')
@@ -48,7 +49,7 @@ else
   endif
 endif " }}}
 
-" define home{{{
+""" define home{{{
 function! s:DefineHome()
   if (s:is_win)
     if (s:is_nvim)
@@ -73,9 +74,8 @@ endfunction
 
 if isdirectory(template_route)
   function! s:insert_template()
-    let home_template = s:DefineHome()
-    " let home_template = "/.config/nvim/plugged/vim-better-header/template"
     " define filetype {{{
+    let home_template = s:DefineHome()
     if (&filetype ==# 'cpp')||(&filetype ==# 'c')||(&filetype ==# 'rust')
           \ ||(&filetype ==# 'go')||(&filetype ==# 'java')||(&filetype ==# 'php')
           \ ||(&filetype ==# 'javascript')||(&filetype ==# 'scala')
