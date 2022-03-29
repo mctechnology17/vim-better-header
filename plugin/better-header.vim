@@ -80,27 +80,27 @@ if isdirectory(template_route)
           \ ||(&filetype ==# 'go')||(&filetype ==# 'java')||(&filetype ==# 'php')
           \ ||(&filetype ==# 'javascript')||(&filetype ==# 'scala')
           \ ||(&filetype ==# 'json')||(&filetype ==# 'jsonc')
-      let template = home."/cpp.txt"
+      let template = resolve(home."/cpp.txt")
     elseif (&filetype ==# 'markdown')||(&filetype ==# 'vimwiki')
-      let template = home."/markdown.txt"
+      let template = resolve(home."/markdown.txt")
     elseif (&filetype ==# 'mail')
-      let template = home."/mail.txt"
+      let template = resolve(home."/mail.txt")
     elseif (&filetype ==# 'autohotkey')
-      let template = home."/autohotkey.txt"
+      let template = resolve(home."/autohotkey.txt")
     elseif (&filetype ==# 'dosbatch')
-      let template = home."/dosbatch.txt"
+      let template = resolve(home."/dosbatch.txt")
     elseif (&filetype ==# 'html')
-      let template = home."/html.txt"
+      let template = resolve(home."/html.txt")
     elseif (&filetype ==# 'xml')
-      let template = home."/xml.txt"
+      let template = resolve(home."/xml.txt")
     elseif (&filetype ==# 'vim')||(&filetype ==# 'nvim')
-      let template = home."/vim.txt"
+      let template = resolve(home."/vim.txt")
     elseif (&filetype ==# 'tex')||(&filetype ==# 'plaintex')
-      let template = home."/latex.txt"
+      let template = resolve(home."/latex.txt")
     elseif (&filetype ==# 'lua')
-      let template = home."/lua.txt"
+      let template = resolve(home."/lua.txt")
     else
-      let template = home."/hashtag.txt"
+      let template = resolve(home."/hashtag.txt")
     endif
     " }}}
     " global variable {{{
