@@ -64,8 +64,6 @@ let g:better_head_github = "https://github.com/mctechnology17"
 <img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/vim-better-header-demo.MOV" height="450">
 
 #### Manual installation
-If you are not using any plug manager, you can integrate GitManager to
-vim in the following way, keeping in mind that the repository is in your home
 
 ```vim
     set rtp+=~/vim-better-header
