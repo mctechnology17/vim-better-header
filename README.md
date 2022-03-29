@@ -19,30 +19,24 @@
 # Intro
 `better-header` is a template that is inserted when starting a new file, saving time and allowing you to have an impeccable aesthetic in each new file created by you.
 
-`better-header` some features:
-- friendly user interface
-- easy use
-- multi platform (OSX, Linux, Docker, Windows, WSL2)
-- easy integration
-
 # Installation
 
 #### Quick start
 Simply install the plugin with your preferred plugin handler
 and the arguments for the following variables
 ```vim
-    " install better-header
-    Plug 'mctechnology17/vim-better-header'
-    " set your info, hier a example:
-    let g:better_head_date = strftime("%H:%M %d.%B.%Y")
-    let g:better_head_author = "Marcos Chow Castro"
-    let g:better_head_email = "mctechnology170318@gmail.com"
-    let g:better_head_github = "https://github.com/mctechnology17"
+" install better-header
+Plug 'mctechnology17/vim-better-header'
+" set your info, hier a example:
+let g:better_head_date = strftime("%H:%M %d.%B.%Y")
+let g:better_head_author = "Marcos Chow Castro"
+let g:better_head_email = "mctechnology170318@gmail.com"
+let g:better_head_github = "https://github.com/mctechnology17"
 ```
 
 <img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/vim-better-header-demo.MOV" height="450">
 
-#### No Plugin Manager
+#### Manuaal installation
 If you are not using any plug manager, you can integrate GitManager to
 vim in the following way, keeping in mind that the repository is in your home
 
@@ -99,7 +93,8 @@ improve your workflow, integrating with all operating systems and all possible
 shells
 
 Here you can see another recently published project:
-- [vimtools]
+- [vimtools] functions and settings that will make it easy for you life
+- [gm] git manager with a friendly user interface
 
 
 ## [LICENSE](LICENSE)
