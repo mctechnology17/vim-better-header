@@ -1,0 +1,13 @@
+Changelog file for Structures extra.
+https://github.com/mctechnology17/vim-better-header/blob/master/CHANGELOG.txt
+
+# Structures 0.0.1-beta1 (March29, 2022)
+=======================================
+
+# List of exciting new features
+
++ INITIAL RELEASE
+ - vim-better-header is now a plugin for vim.
+
++ TODO
+ - doc, tags, README, photos, etc.

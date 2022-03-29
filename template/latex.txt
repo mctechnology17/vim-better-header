@@ -1,0 +1,9 @@
+% ========================================
+% FileName: <file_name>
+% Date: <date>
+% Author: <name>
+% Email: <email>
+% GitHub: <github>
+% Brief: <brief>
+% Detail: <detail>
+% =========================================
