@@ -25,7 +25,7 @@ let s:is_win =
       \ ))
 let s:is_unix = get(s:, 'is_unix', has('unix'))
 let s:is_vim = get(s:, 'is_vim', !has('nvim'))
-let s:is_nvim = get(s:, 'is_vim', has('nvim'))
+let s:is_nvim = get(s:, 'is_nvim', has('nvim'))
 " }}}
 
 """ template_route {{{
