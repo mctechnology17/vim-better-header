@@ -53,20 +53,19 @@ function! s:DefineHome()
   if (s:is_win)
     if (s:is_nvim)
       return resolve(expand(
-            \ $HOME.'/AppData/Local/nvim-data/site/autoload/vim-better-header/template'
+            \ '/AppData/Local/nvim-data/site/autoload/vim-better-header/template'
             \ ))
     else
       return resolve(expand(
-            \ $HOME.'/vimfiles/autoload/vim-better-header/template'))
+            \ '/vimfiles/autoload/vim-better-header/template'))
     endif
   else
     if (s:is_nvim)
       return resolve(expand(
-            \ $HOME.'.config/nvim/plugged/vim-better-header/template'
-            \ ))
+            \ '/.config/nvim/plugged/vim-better-header/template'))
     else
       return resolve(expand(
-            \ $HOME.'.vim/plugged/vim-better-header/template'))
+            \ '/.vim/plugged/vim-better-header/template'))
     endif
   endif
 endfunction
@@ -74,35 +73,36 @@ endfunction
 
 if isdirectory(template_route)
   function! s:insert_template()
+    let home_template = s:DefineHome()
+    " let home_template = "/.config/nvim/plugged/vim-better-header/template"
     " define filetype {{{
-    let home = s:DefineHome()
     if (&filetype ==# 'cpp')||(&filetype ==# 'c')||(&filetype ==# 'rust')
           \ ||(&filetype ==# 'go')||(&filetype ==# 'java')||(&filetype ==# 'php')
           \ ||(&filetype ==# 'javascript')||(&filetype ==# 'scala')
           \ ||(&filetype ==# 'json')||(&filetype ==# 'jsonc')
-      let template = expand(home."/cpp.txt")
+      let template = resolve(expand($HOME.home_template.'/cpp.txt'))
     elseif (&filetype ==# 'markdown')||(&filetype ==# 'vimwiki')
-      let template = expand(home."/markdown.txt")
+      let template = resolve(expand($HOME.home_template.'/markdown.txt'))
     elseif (&filetype ==# 'mail')
-      let template = expand(home."/mail.txt")
+      let template = resolve(expand($HOME.home_template.'/mail.txt'))
     elseif (&filetype ==# 'autohotkey')
-      let template = expand(home."/autohotkey.txt")
+      let template = resolve(expand($HOME.home_template.'/autohotkey.txt'))
     elseif (&filetype ==# 'dosbatch')
-      let template = expand(home."/dosbatch.txt")
+      let template = resolve(expand($HOME.home_template.'/dosbatch.txt'))
     elseif (&filetype ==# 'html')
-      let template = expand(home."/html.txt")
+      let template = resolve(expand($HOME.home_template.'/html.txt'))
     elseif (&filetype ==# 'xml')
-      let template = expand(home."/xml.txt")
+      let template = resolve(expand($HOME.home_template.'/xml.txt'))
     elseif (&filetype ==# 'vim')||(&filetype ==# 'nvim')
-      let template = expand(home."/vim.txt")
+      let template = resolve(expand($HOME.home_template.'/vim.txt'))
     elseif (&filetype ==# 'tex')||(&filetype ==# 'plaintex')
-      let template = expand(home."/latex.txt")
+      let template = resolve(expand($HOME.home_template.'/latex.txt'))
     elseif (&filetype ==# 'lua')
-      let template = expand(home."/lua.txt")
+      let template = resolve(expand($HOME.home_template.'/lua.txt'))
     else
-      let template = expand(home."/hashtag.txt")
+      let template = resolve(expand($HOME.home_template.'/hashtag.txt'))
     endif
-    " }}}
+    "}}}
     " global variable {{{
     let file_name = expand("%:t")
     if !exists('g:better_head_date')
