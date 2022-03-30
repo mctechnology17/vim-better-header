@@ -1,0 +1,167 @@
+*better-header.txt*                          a better automated template for vim
+                                                *better-header* *:better-header*
+
+
+                               ╔═╦═╦═╗
+                        ╔════╗ ║║║║║╔╝
+                        ║╔╗╔╗║ ║║║║║╚╗
+                        ╚╝║║╚╝ ║╠═╩╩═╝
+                          ║╠═╦═╣╚╦═╦╦═╦╗╔═╦═╦╦╗
+                          ║║╩╣═╣║║║║║╬║╚╣╬║╬║║║
+                          ╚╩═╩═╩╩╩╩═╩═╩═╩═╬╗╠╗║
+                                          ╚═╩═╝
+
+============================================================================
+CONTENTS                                                *better-header-contents*
+
+
+   01. Intro ........................................... |better-header-intro|
+   02. Features ..................................... |better-header-features|
+   03. Installation ............................. |better-header-installation|
+   04. Customization ........................... |better-header-customization|
+   05. Contributions ........................... |better-header-contributions|
+   06. Bugs ............................................. |better-header-bugs|
+   07. Changelog ................................... |better-header-changelog|
+   08. credits ....................................... |better-header-credits|
+   09. License ....................................... |better-header-license|
+
+============================================================================
+INTRODUCTION                                              *better-header-intro*
+
+`better-header` is a template that is inserted when starting a new file, saving
+time and allowing you to have an impeccable aesthetic in each new file created
+by you.
+
+With better-header you no longer have to write the date, your name or your
+github, which are repetitive things, save time and only define that information
+once.
+
+============================================================================
+FEATURES                                               *better-header-features*
+
+`better-header` compatible with all programming languages, markup language,
+scripts, etc. here are some as an example:
+
+cpp,c,go,java,javascript,scala,php,rust,jsonc,json,vim,python,r,ruby,
+sh,desktop,fstab,profile,text,tmux,make,dockerfile,bashrc,zsh,zshrc,
+bash_profile,gitignore,yaml,gdb,gitconfig,conf,fish,sshconfig,html,
+xml,tex,mail,lua,dosbatch,autohotkey
+This is an example of the header that is used as a format:
+
+    >
+    # ========================================
+    # FileName: README.md
+    # Date: 00:51 30.March.2022
+    # Author: Marcos Chow Castro
+    # Email: mctechnology170318@gmail.com
+    # GitHub: https://github.com/mctechnology17
+    # Brief: repository description
+    # =========================================
+<
+
+============================================================================
+INSTALLATION                                       *better-header-installation*
+
+Quick start
+
+    >
+        git clone https://github.com/mctechnology17/vim-better-header
+        # set on your .vimrc or init.vim
+        set rtp+=~/vim-better-header
+<
+
+Using Vundle: https://github.com/gmarik/vundle
+
+Just add this line to your `~/.vimrc`:
+
+    >
+        Plugin 'mctechnology17/vim-better-header'
+<
+
+And run `:PluginInstall` inside Vim.
+
+Using pathogen.vim: https://github.com/tpope/vim-pathogen
+
+Copy and paste in your shell:
+
+    >
+        cd ~/.vim/bundle
+        git clone https://github.com/mctechnology17/vim-better-header
+<
+
+Using vpm: https://github.com/KevinSjoberg/vpm
+
+Run this command in your shell:
+
+    >
+        vpm insert mctechnology17/vim-better-header
+<
+
+Using Plug: https://github.com/junegunn/vim-plug
+
+Just add this line to your `~/.vimrc` inside plug call:
+
+    >
+        Plug 'mctechnology17/vim-better-header'
+<
+
+And run `:PlugInstall` inside Vim or `vim +PlugInstall +qa` from shell.
+
+============================================================================
+CUSTOMIZATION                                   *better-header-customization*
+
+These are the variables that you have to modify for your information to appear.
+If you do not give the value to these variables, the Header will appear but
+without its information, that is, blank
+
+    >
+    " set your info, hier a example:
+    let g:better_head_date = strftime("%H:%M %d.%B.%Y")
+    let g:better_head_author = "Marcos Chow Castro"
+    let g:better_head_email = "mctechnology170318@gmail.com"
+    let g:better_head_github = "https://github.com/mctechnology17"
+<
+
+============================================================================
+CONTRIBUTIONS                                   *better-header-contributions*
+
+Contributions are welcomed and appreciated. Just follow the normal Github
+procedure. Go to:
+
+    https://github.com/mctechnology17/vim-better-header
+
+Fork the project. Work on what you think would make it better. Send a pull
+request.
+
+============================================================================
+BUGS                                                       *better-header-bugs*
+
+Before submitting a bug report, try upgrading to the latest version of the
+plugin. The bug could have been fixed already.
+
+If the problem persists, go to:
+
+    https://github.com/mctechnology17/vim-better-header
+
+Check the list of open issues and see if the problem you are facing has not
+been reported already. You can add more information to the issue in case it
+has. Otherwise, submit a new issue.
+
+============================================================================
+CHANGELOG                                             *better-header-changelog*
+
+Refer to CHANGELOG.txt
+
+============================================================================
+CREDITS                                                 *better-header-credits*
+
+Marcos Chow Castro - MC Technology
+Mail: mctechnology170318@gmail.com
+GitHub: https://github.com/mctechnology17
+Twitter: https://twitter.com/mctechnology17
+Youtube: https://www.youtube.com/c/mctechnology17
+
+============================================================================
+LICENSE                                                 *better-header-license*
+
+Released under the GNU General Public License v3.0.
