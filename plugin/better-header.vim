@@ -50,7 +50,10 @@ endif " }}}
 
 """ define home{{{
 function! s:DefineHome()
-  if (s:is_win)
+  if (isdirectory($HOME."/vim-better-header/template"))
+    return resolve(expand(
+          \ '/vim-better-header/template'))
+  elseif (s:is_win)
     if (s:is_nvim)
       return resolve(expand(
             \ '/AppData/Local/nvim-data/site/autoload/vim-better-header/template'
