@@ -108,7 +108,7 @@ And run `:PlugInstall` inside Vim or `vim +PlugInstall +qa` from shell.
 <img src="https://github.com/mctechnology17/mctechnology17/blob/main/src/PlugInstall.gif" height="450">
 
 # Donate
-If you're enjoying `better-header`, feel free to donate or become a sponsor.
+If you're enjoy my work, feel free to donate or become a sponsor.
 - [paypal]
 - [sponsor]
 
