@@ -9,8 +9,6 @@
 
 scriptencoding utf-8
 
-let s:plugin_path = expand('<sfile>:p:h:h')
-
 if exists('g:better_head_enable') " {{{
   finish
 endif
@@ -18,6 +16,8 @@ endif
 let g:better_head_enable =
 			\ get(g:, 'better_head_enable', 1)
 " }}}
+
+let s:plugin_path = expand('<sfile>:p:h:h')
 
 function! s:insert_template()
   " define filetype {{{
